@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+html{
+  box-sizing:border-box;
+  font-size:62.5%;
+}
+html,body,h1,h2,h3,h4,span,a,p{
+  font-family:'Roboto', sans-serif;
+}
+a{
+  text-decoration:none;
+}
+img{
+  max-width:100%;
+}
+.bg-blue{
+  background-color:#06AEEF;
+}
+.bg-black{
+  background-color:#000000;
+}
+.txt-blue{
+  color:#06AEEF;
+}
+.txt-white{
+  color:#FFFFFF;
+}
+.d-flex{
+  display:flex;
+}
+.row{
+  width:100%;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:inherit;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  max-width:1200px;
+  margin:auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.main-container{
+  width:100%;
+  background-image: url("https://tintopolis.cl/wp-content/uploads/2020/12/bg-contacto.jpg");
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:top center;
+  padding: 5rem 0;
+}
+.main-container img{
+  padding:2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
