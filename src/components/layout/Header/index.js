@@ -5,8 +5,8 @@ import './styles.css'
 import PhoneIcon from '@material-ui/icons/Phone';
 import MailIcon from '@material-ui/icons/MailOutline';
 import ClockIcon from '@material-ui/icons/QueryBuilder';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import MenuIcon from '@material-ui/icons/MenuRounded';
+import ShopButton from '../src/components/ShopButton';
 
 const Header = () => {
 
@@ -33,10 +33,7 @@ const Header = () => {
 
         <div className='row bg-black d-flex main-header-row'>
           <img className='main-header-logo' src='https://tintopolis.cl/wp-content/uploads/2020/12/Tintopolis_logo_blanco-1024x487.png' />
-          <div className='d-flex online-shop-button'>
-            <p className=''>Tienda Online</p>
-            <ShoppingCartIcon/>
-          </div>
+          <ShopButton/>
           <div className='burger-menu-icon'>
             <MenuIcon/>
           </div>

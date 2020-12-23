@@ -23,6 +23,12 @@ img{
 .txt-white{
   color:#FFFFFF;
 }
+.txt-yellow{
+  color: #F8F921;
+}
+.txt-center{
+  text-align: center;
+}
 .d-flex{
   display:flex;
 }
@@ -52,6 +58,9 @@ img{
 .main-container img{
   padding:2rem;
 }
+
+
+
 
 
 
