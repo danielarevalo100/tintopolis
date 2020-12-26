@@ -34,6 +34,10 @@ header .online-shop-button{
   width:50%;
 }
 
+header .online-shop-button p{
+  font-size:1.2rem;
+}
+
 header .burger-menu-icon{
   width: 20%;
 }

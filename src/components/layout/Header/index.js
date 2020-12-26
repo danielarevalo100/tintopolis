@@ -6,7 +6,8 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import MailIcon from '@material-ui/icons/MailOutline';
 import ClockIcon from '@material-ui/icons/QueryBuilder';
 import MenuIcon from '@material-ui/icons/MenuRounded';
-import ShopButton from '../src/components/ShopButton';
+
+import ShopButton from '../../ShopButton';
 
 const Header = () => {
 
