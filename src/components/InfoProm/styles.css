@@ -1,0 +1,16 @@
+.prom-container{
+    padding: 10px;
+    text-align: center;
+}
+
+.prom-container a{
+    font-size: 1.8rem;
+}
+
+.prom-container p{
+    font-size: 1.4rem;
+}
+
+.prom-container img{
+    width: 300vw;
+}

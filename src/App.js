@@ -10,6 +10,7 @@ import Footer from '../src/components/layout/Footer';
 import InfoBox from '../src/components/InfoBox';
 import HomeCarousel from '../src/components/HomeCarousel';
 import ShopButton from '../src/components/ShopButton';
+import InfoProm from '../src/components/InfoProm';
 
 function App() {
   return (
@@ -41,6 +42,9 @@ function App() {
         </div>
       </div>
       <InfoBox title='PROMOCIONES' desc='Aprovecha nuestras promociones y obten mucho mas por menos te esperamos!'/>
+      <InfoProm img='https://tintopolis.cl/wp-content/uploads/2020/12/PROMOS_S-2-300x300.png' title='Promo Stickers' desc='1000 Stickers 5x5cm en adhesivo PVC blanco impresos con una excelente calidad, resistentes a altas y bajas temperaturas.Condiciones de la promoción:Solo stickers circulares o rectangulares.'/>
+      <InfoProm img='https://tintopolis.cl/wp-content/uploads/2020/12/PROMOS_S-3-300x300.png' title='Promo señaletica' desc='Pack de 4 señaléticas.Impresas en Adhesivo PVC mate o brillante sobre Sintra de 3mm.Medidas: 15×20 cm'/>
+      <InfoProm img='https://tintopolis.cl/wp-content/uploads/2020/12/PROMOS_LS-1-300x300.png' title='Logo + Stickers' desc='Diseñamos tu logo de manera simple y además te entregamos los archivos editables en varios formatos, súmale 1000 Stickers 5x5cm en adhesivo PVC blanco impresos'/>
       <Footer/>
 
 
