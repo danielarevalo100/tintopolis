@@ -18,6 +18,7 @@ import { API_posts } from '../src/managers/Api'
 
 function App() {
   return(
+
     <Layout>
       <Router>
         <Switch>
@@ -25,6 +26,7 @@ function App() {
         </Switch>
       </Router>
     </Layout>
+
   )
   
 }

@@ -32,12 +32,24 @@ const Header = () => {
           </div>
         </div>
 
-        <div className='row bg-black d-flex main-header-row'>
-          <img className='main-header-logo' src='https://tintopolis.cl/wp-content/uploads/2020/12/Tintopolis_logo_blanco-1024x487.png' />
-          <ShopButton/>
-          <div className='burger-menu-icon'>
-            <MenuIcon/>
+        <div className='row bg-black flex-center-center d-flex main-header-row'>
+          <div style={{maxWidth:'1140px'}} className='container d-flex'>
+            <img className='main-header-logo' src='https://tintopolis.cl/wp-content/uploads/2020/12/Tintopolis_logo_blanco-1024x487.png' />
+            <ShopButton/>
+            <div className='burger-menu-icon'>
+              <MenuIcon/>
+            </div>
+            <nav>
+              <ul>
+                <li>Inicio</li>
+                <li>Nosotros</li>
+                <li>Promociones</li>
+                <li>Servicios</li>
+                <li>Contacto</li>
+              </ul>
+            </nav>
           </div>
+
         </div>
 
       </div>
