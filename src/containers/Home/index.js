@@ -24,8 +24,7 @@ const Home = ( props ) => {
 
   useEffect( async () => {
     const response = await API_posts.fetch([297, 301, 348]);
-    console.log(response)
-    console.log(posts)
+    setPosts(response)
   }, [] )
 
   return (
@@ -55,10 +54,8 @@ const Home = ( props ) => {
           </p>
         </div>
       </div>
-
       <InfoBox title='PROMOCIONES' desc='Aprovecha nuestras promociones y obten mucho mas por menos te esperamos!'/>
-
-      {posts.map(( post ) => <InfoProm key={post.id} img={post.featured_image_src} title={post.title?.rendered || 'Tintopolis'} desc={post.excerpt.rendered}/>)}
+      {posts.map(( post ) => <InfoProm key={post.id} img={post.featured_image_src} title={post.title?.rendered || 'Tintopolis'} desc={post.excerpt?.rendered || 'Tintopolis Tu mejor opcion'}/>)}
 
       {/*
         <InfoProm img='https://tintopolis.cl/wp-content/uploads/2020/12/PROMOS_S-2-300x300.png' title='Promo Stickers' desc='1000 Stickers 5x5cm en adhesivo PVC blanco impresos con una excelente calidad, resistentes a altas y bajas temperaturas.Condiciones de la promoción:Solo stickers circulares o rectangulares.'/>
