@@ -15,10 +15,8 @@ export const API_posts ={
       },'')
     }
     
-    console.log(parsedParams);
-    const response = await axios(BASE_URL + 'posts' + parsedParams)
-    console.log(response.data)
-    
+    const response = await axios(BASE_URL + 'posts' + parsedParams);
+    return response.data;
   }
 
 }

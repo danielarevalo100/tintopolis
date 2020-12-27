@@ -11,7 +11,7 @@ const InfoProm =( props ) => {
                 <h4><a>{props.title}</a></h4>
             </div>
             <div className='container' style={{color:'#777', lineHeight:'2.2rem'}}>
-                <p>{props.desc}</p>
+                <p dangerouslySetInnerHTML={{ __html: props.desc }}></p>
             </div>
             <div className='container' style={{fontWeight:'500', paddingTop:'3px'}}>
                 <a href='/' style={{color:'#00AFEC', fontSize:'13px', lineHeight:'4rem'}}>Leer mas</a>
