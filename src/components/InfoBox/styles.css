@@ -5,8 +5,18 @@
 .info-container .info-container-info p{
   margin-top:2rem;
   font-size: 2rem;
-  font-weight:200;
+  font-weight:100;
   padding-left:1.5rem;
   margin-left:1rem;
   border-left: 1px solid #000000;
+}
+@media only screen and (min-width:750px){
+  .info-container h4{
+    font-size:4rem; 
+  }
+  .info-container .info-container-info p{
+    font-size:2.5rem;
+    margin-left:12rem;
+  }
+
 }

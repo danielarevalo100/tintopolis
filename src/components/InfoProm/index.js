@@ -1,7 +1,9 @@
 import React from 'react';
+
+/* styles */
 import './styles.css'
 
-const InfoProm =( props ) => {
+const InfoProm = ( props ) => {
     return(
         <div className='prom-container'>
             <div className='container'>

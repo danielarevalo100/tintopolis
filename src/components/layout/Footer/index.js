@@ -16,7 +16,7 @@ const Footer = () => {
       <div className='main-footer'>
 
 
-        <div style={{position:'relative'}} className='container bg-blue'>
+        <div style={{position:'relative', maxWidth:'unset'}} className='container bg-blue'>
           <div className='blue-line-container-top'><BlueLine/></div>
           <div className='row d-flex'>
 
@@ -57,7 +57,7 @@ const Footer = () => {
 
         {/*<div style={{marginTop:'-35px'}} className='pink-line-container-top'><BlueLine/></div>*/}
 
-        <div style={{position:'relative'}} className='container bg-pink'>
+        <div style={{position:'relative', maxWidth:'unset'}} className='container bg-pink'>
           <div style={{paddingTop:'2rem'}} className='row'>
             <img className='footer-logo' src='https://tintopolis.cl/wp-content/uploads/2020/12/Tintopolis_logo_blanco-1024x487.png' />
             <div className='pink-line-container-bottom'><BlueLine/></div>

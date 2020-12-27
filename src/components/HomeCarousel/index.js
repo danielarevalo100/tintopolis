@@ -6,7 +6,7 @@ const HomeCarousel =()=>{
 
     return(
 
-        <Carousel showStatus={false} showThumbs={false} infiniteLoop={true} autoPlay={true}>
+      <Carousel centerMode centerSlidePercentage={window.innerWidth > 720? window.innerWidth > 1000?20:40:100} showStatus={false} showThumbs={false} infiniteLoop={true} autoPlay={true}>
         <div style={{padding:'20px'}}>
           <img src="https://tintopolis.cl/wp-content/uploads/2020/12/05_Pendon-60x200-1.jpg"/>
         </div>
