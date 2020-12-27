@@ -15,9 +15,9 @@ const Footer = () => {
     <footer>
       <div className='main-footer'>
 
-        <div className='blue-line-container-top'><BlueLine/></div>
 
-        <div className='container bg-blue'>
+        <div style={{position:'relative'}} className='container bg-blue'>
+          <div className='blue-line-container-top'><BlueLine/></div>
           <div className='row d-flex'>
 
             <div className='col-4'>
@@ -51,15 +51,18 @@ const Footer = () => {
             </div >
 
           </div>
+
+          <div className='blue-line-container-bottom'><BlueLine/></div>
         </div>
 
-        <div className='blue-line-container-bottom'><BlueLine/></div>
-        <div style={{marginTop:'-35px'}} className='pink-line-container-top'><BlueLine/></div>
+        {/*<div style={{marginTop:'-35px'}} className='pink-line-container-top'><BlueLine/></div>*/}
 
-        <div className='container bg-pink'>
-          <img className='footer-logo' src='https://tintopolis.cl/wp-content/uploads/2020/12/Tintopolis_logo_blanco-1024x487.png' />
+        <div style={{position:'relative'}} className='container bg-pink'>
+          <div style={{paddingTop:'2rem'}} className='row'>
+            <img className='footer-logo' src='https://tintopolis.cl/wp-content/uploads/2020/12/Tintopolis_logo_blanco-1024x487.png' />
+            <div className='pink-line-container-bottom'><BlueLine/></div>
+          </div>
         </div>
-        <div className='pink-line-container-bottom'><BlueLine/></div>
         <div className='footer-bottom-row bg-black'>
           <p className='txt-center' style={{color:'#333333'}}>Powered by Daniel Arevalo | Designed by Pulpo Creativo</p>
         </div>
