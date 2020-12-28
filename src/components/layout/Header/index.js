@@ -41,7 +41,7 @@ const Header = () => {
             </div>
             <nav>
               <ul>
-                <li>Inicio</li>
+                <li className='active'>Inicio</li>
                 <li>Nosotros</li>
                 <li>Promociones</li>
                 <li>Servicios</li>

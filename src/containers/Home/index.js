@@ -44,17 +44,19 @@ const Home = ( props ) => {
       <div className='black-bar' >
         <div className='bg-black' style={{width:'100%', padding:'2rem'}}>
           <div className='container after-arrow'>
-            <p className='txt-white txt-center' style={{lineHeight:'1.8rem'}}>Realizamos envíos a todo Chile. En RM despacho GRATIS por compras superiores a $40.000</p>
-            <h2 className='txt-yellow txt-center' style={{fontSize:'1.3rem', paddingTop:'2px'}}>TODOS NUESTROS PRECIOS INCLUYEN IVA</h2>
-            <div style={{marginTop:'1rem'}}>
-              <ShopButton/>
+            <div className='d-flex'>
+                <p className='txt-white txt-center' style={{lineHeight:'1.8rem'}}>Realizamos envíos a todo Chile. En RM despacho GRATIS por compras superiores a $40.000</p>
+                <h2 className='txt-yellow txt-center' style={{fontSize:'1.3rem', paddingTop:'2px'}}>TODOS NUESTROS PRECIOS INCLUYEN IVA</h2>
+                <div style={{marginTop:'1rem'}}>
+                  <ShopButton/>
+                </div>
             </div>
           </div>
         </div>
 
         <div className='bg-gray after-arrow-section'>
           <div className='container'>
-            <p className='txt-center' style={{letterSpacing:'.25rem'}}>
+            <p className='txt-center' style={{letterSpacing:'1rem'}}>
               TENEMOS UN CHAT ONLINE A TU DISCPOSICION
             </p>
           </div>

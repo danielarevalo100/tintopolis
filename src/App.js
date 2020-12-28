@@ -12,6 +12,7 @@ import Layout from '../src/components/layout'
 
 /* containers */
 import Home from '../src/containers/Home'
+import Nosotros from '../src/containers/Nosotros'
 
 /* managers */
 import { API_posts } from '../src/managers/Api'
@@ -23,6 +24,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path='/' component={Home}/>
+          <Route exact path='/nosotros' component={Nosotros}/>
         </Switch>
       </Router>
     </Layout>
