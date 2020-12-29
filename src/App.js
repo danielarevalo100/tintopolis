@@ -20,14 +20,14 @@ import { API_posts } from '../src/managers/Api'
 function App() {
   return(
 
-    <Layout>
-      <Router>
+    <Router>
+      <Layout>  
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route exact path='/nosotros' component={Nosotros}/>
         </Switch>
-      </Router>
-    </Layout>
+      </Layout>
+    </Router>
 
   )
   

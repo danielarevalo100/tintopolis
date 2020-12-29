@@ -1,0 +1,71 @@
+.impre-container{
+    width: 100%;
+    background-image: url("https://tintopolis.cl/wp-content/uploads/2020/12/mancha_magenta.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 5rem 0;
+}
+.impre-container img{
+    padding: 2rem;
+    width: 80%;
+    object-fit: contain;
+}
+@media only screen and (min-width:800px){
+    .impre-container img{
+        width: 60rem;
+        padding: 0;
+        margin: -15rem 8rem 10rem 30rem;
+    }
+}
+.serv-imp{
+    color: #7a7a7a;
+}
+.serv-imp h2{
+    font-size: 1.7rem;
+}
+.serv-imp h3{
+    font-size: 3.3rem;
+}
+@media only screen and (min-width:800px){
+    .serv-imp{
+        padding-left: 24rem;
+        text-align: left;
+        margin-top: 10rem;
+    }
+    .serv-imp h2{
+        font-size: 4.3rem;
+    }
+    .serv-imp h3{
+        font-size: 6.9rem;
+    }
+}
+.InfoInk{
+    width:100%;
+    background-image: url("https://tintopolis.cl/wp-content/uploads/2020/12/mancha_titutlo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5rem;
+}
+.InfoInk h2{
+    font-size: 1rem;
+    padding-left: 7rem;
+}
+.InfoInk h3{
+    font-size: 1.6rem;
+    padding-left: 3rem;
+}
+@media only screen and (min-width:800px){
+    .InfoInk{
+        background-size: auto;
+        padding: 13rem;
+    }
+    .InfoInk h2{
+        font-size: 2.5rem;
+        padding-left: 14rem;
+    }
+    .InfoInk h3{
+        font-size: 4.1rem;
+    }
+}

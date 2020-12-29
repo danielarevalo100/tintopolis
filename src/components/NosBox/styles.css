@@ -1,0 +1,27 @@
+.nostrs-container{
+    width:100%;
+    background-image: url("https://tintopolis.cl/wp-content/uploads/2020/12/mancha_negro.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.nostrs-container h2{
+    font-size: 3.2rem; 
+    font-weight: 400;
+    padding: 0 2rem;
+}
+.nostrs-container-info p{
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    font-weight: 100;
+    color: #7A7A7A;
+    text-align: justify;
+    padding: 2rem 2rem 10rem 2rem;
+}
+@media only screen and (min-width:750px){
+    .nostrs-container-info p{
+        font-size: 1.7rem;
+        columns: 2;
+        padding: 2rem 2rem 20rem 2rem;
+    }
+}

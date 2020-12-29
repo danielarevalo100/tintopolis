@@ -1,4 +1,7 @@
 import React from 'react';
+import { 
+  Link
+} from 'react-router-dom'
 
 import './styles.css'
 
@@ -41,8 +44,8 @@ const Header = () => {
             </div>
             <nav>
               <ul>
-                <li className='active'>Inicio</li>
-                <li>Nosotros</li>
+                <li className='active'><Link to={{pathname:'/'}} >Inicio</Link></li>
+                <li><Link to={{pathname:'/nosotros'}} >Nosotros</Link></li>
                 <li>Promociones</li>
                 <li>Servicios</li>
                 <li>Contacto</li>
