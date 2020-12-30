@@ -14,6 +14,7 @@ import Layout from '../src/components/layout'
 import Home from '../src/containers/Home'
 import Nosotros from '../src/containers/Nosotros'
 import Servicios from '../src/containers/Servicios'
+import Promociones from '../src/containers/Promociones'
 
 /* managers */
 import { API_posts } from '../src/managers/Api'
@@ -27,6 +28,7 @@ function App() {
           <Route exact path='/' component={Home}/>
           <Route exact path='/nosotros' component={Nosotros}/>
           <Route exact path='/servicios' component={Servicios}/>
+          <Route exact path='/promociones' component={Promociones}/>
         </Switch>
       </Layout>
     </Router>

@@ -46,8 +46,8 @@ const Header = () => {
               <ul>
                 <li className='active'><Link to={{pathname:'/'}} >Inicio</Link></li>
                 <li><Link to={{pathname:'/nosotros'}} >Nosotros</Link></li>
-                <li>Promociones</li>
-                <li>Servicios</li>
+                <li><Link to={{pathname:'/promociones'}} >Promociones</Link></li>
+                <li><Link to={{pathname:'/servicios'}} >Servicios</Link></li>
                 <li>Contacto</li>
               </ul>
             </nav>

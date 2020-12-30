@@ -9,8 +9,8 @@ import ProductList from '../../components/ProductList';
 const Servicios = ( props ) => {
     return(
         <div className='app'>
-            <div className='p-backgrnd'>
-                <div className='container flex-center-center d-flex b-color'>
+            <div className='s-backgrnd'>
+                <div className='container flex-center-center d-flex s-color'>
                     <h2>SERVICIOS</h2>
                     <img src='https://tintopolis.cl/wp-content/uploads/2020/12/Tintopolis_logo_negro.png'/>
                 </div>
