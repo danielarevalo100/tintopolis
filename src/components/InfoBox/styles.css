@@ -1,8 +1,12 @@
+.info-container{
+  width: 100%;
+  padding: 4rem;
+}
 .info-container h4{
   font-size:2.5rem; 
   font-weight:400;
 }
-.info-container .info-container-info p{
+.info-container-info p{
   margin-top:2rem;
   font-size: 2rem;
   font-weight:100;
@@ -12,12 +16,15 @@
   border-left: 1px solid #000000;
 }
 @media only screen and (min-width:750px){
+  .info-container{
+    margin: 0 5rem 0 5rem;
+  }
   .info-container h4{
     font-size:4rem; 
   }
   .info-container .info-container-info p{
     font-size:2.5rem;
-    margin-left:12rem;
+    margin-left:11rem;
     line-height: 25px;
   }
 

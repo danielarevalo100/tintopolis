@@ -1,0 +1,28 @@
+.products{
+    width: 33%;
+    padding: 1rem;
+    display: inline-table;
+}
+.products img{
+    margin-bottom: 5px;
+}
+.products h3{
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-size: 12px;
+    font-weight: 300;
+}
+@media only screen and (min-width:800px){
+    .products{
+        width: 200px;
+    }
+    .products img{
+        width: 150px;
+    }
+    .products h3{
+        font-size: 18px;
+    }
+    .products p{
+        font-size: 14px;
+    }
+}

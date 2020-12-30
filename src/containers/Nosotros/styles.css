@@ -27,7 +27,7 @@
 .serv-imp h3{
     font-size: 3.3rem;
 }
-@media only screen and (min-width:800px){
+@media only screen and (min-width:900px){
     .serv-imp{
         padding-left: 24rem;
         text-align: left;
