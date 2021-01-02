@@ -1,0 +1,40 @@
+.ps-bg{
+    background-image: url("https://tintopolis.cl/wp-content/uploads/2020/12/bg-contacto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 10%;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.stickers{
+    margin-bottom: 20%;
+}
+.stickers img{
+    max-width: 100%;
+    padding: 10px;
+    justify-content: center;
+}
+@media only screen and (min-width:750px){
+    .stickers{
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 10%;
+    }
+    .stickers img{
+        max-width: 300px;
+    }
+}
+
+.prom-separator{
+    max-width: 100%;
+    padding: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-top: dotted;
+    border-bottom: dotted;
+    border-color: #333333;
+    border-width: thin;
+}

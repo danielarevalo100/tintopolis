@@ -1,0 +1,42 @@
+.prom-container-title{
+    justify-content: flex-start;
+    padding-bottom: 10%;
+    align-items: center;
+}
+@media only screen and (min-width:750px){
+    .prom-container-title{
+        padding-bottom: 5%;
+    }
+}
+
+.tinto-promo{
+    display: block;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.tinto-promo h4{
+    color: #828282;
+    font-size: 16px;
+    letter-spacing: 2.9px;
+}
+.tinto-promo p{
+    color: #7A7A7A;
+    font-size: 17px;
+}
+
+.promo-title{
+    display: block;
+    padding-left: 5%;
+    border-left: 1px solid #000000;
+}
+.promo-title h1{
+    padding-top: 25%;
+    padding-bottom: 25%;
+    color: #EA1483;
+    font-size: 20px;
+}
+@media only screen and (min-width:650px){
+    .promo-title h1{
+        font-size: 30px;
+    }
+}
