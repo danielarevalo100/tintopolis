@@ -19,10 +19,21 @@ const PromoStickers = ( props ) => {
 
   useEffect( async () => {
     console.log(props.match)
-    const response = await API_posts.fetch( [props.match.params.id] );
-    setData(response[0])
-    setLoaded(true)
-    console.log(data)
+    if(props.match.params.id){
+      const response = await API_posts.fetch( [props.match.params.id] );
+      console.log('esta es la respuesta', response.length)
+      if(response.length > 0){
+        setData(response[0]);
+        setLoaded(true);
+        console.log(data);
+      }else{
+        props.history.push('/')
+      }
+
+    }else{
+      props.history.push('/')
+    }
+
   }, [] )
 
   if(!loaded){
@@ -37,10 +48,10 @@ const PromoStickers = ( props ) => {
       <div className='app'>
         <div className='ps-bg'>
           <div className='stickers'>
-            <InfoProm img={data.featured_image_src}/>
+            <InfoProm hideReadMore={true} img={data.featured_image_src}/>
             <PromoProd title={data.title.rendered}/>
             <div className='prom-separator'>
-              <InfoProm desc={data.excerpt.rendered}/>
+              <InfoProm hideReadMore={true} desc={data.excerpt.rendered}/>
             </div>
           </div>
         </div>

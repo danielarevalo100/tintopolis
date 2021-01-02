@@ -25,7 +25,7 @@ const Promociones = ( props ) => {
                     <img src='https://tintopolis.cl/wp-content/uploads/2020/12/Tintopolis_logo_negro.png'/>
                 </div>
                 <div className='prom-section container d-flex'>
-                    {posts.map(( post ) => <InfoProm key={post.id} img={post.featured_image_src} title={post.title?.rendered || 'Tintopolis'} desc={post.excerpt?.rendered || 'Tintopolis Tu mejor opcion'}/>)}
+                    {posts.map(( post ) => <InfoProm path={`/promociones/${post.id}`} key={post.id} img={post.featured_image_src} title={post.title?.rendered || 'Tintopolis'} desc={post.excerpt?.rendered || 'Tintopolis Tu mejor opcion'}/>)}
                 </div>
             </div>
         </div>

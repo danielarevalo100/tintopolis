@@ -60,7 +60,7 @@ const Home = ( props ) => {
       </div>
       <InfoBox title='PROMOCIONES' desc='Aprovecha nuestras promociones y obten mucho mas por menos te esperamos!'/>
       <div className='prom-section container d-flex'>
-        {posts.map(( post ) => <InfoProm key={post.id} img={post.featured_image_src} title={post.title?.rendered || 'Tintopolis'} desc={post.excerpt?.rendered || 'Tintopolis Tu mejor opcion'}/>)}
+        {posts.map(( post ) => <InfoProm path={`/promociones/${post.id}`} key={post.id} img={post.featured_image_src} title={post.title?.rendered || 'Tintopolis'} desc={post.excerpt?.rendered || 'Tintopolis Tu mejor opcion'}/>)}
       </div>
 
     </div>
