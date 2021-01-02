@@ -13,10 +13,11 @@
 .nostrs-container-info p{
     margin-top: 2rem;
     font-size: 1.4rem;
-    font-weight: 100;
+    font-weight: 300;
     color: #7A7A7A;
     text-align: justify;
     padding: 2rem 2rem 10rem 2rem;
+    line-height:35px;
 }
 @media only screen and (min-width:750px){
     .nostrs-container-info p{

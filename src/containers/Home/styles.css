@@ -28,7 +28,15 @@
     width:80%;
   }
 }
-
+@media only screen and (min-width:750px){
+  .container.after-arrow h2,
+  .container.after-arrow p{
+    font-size:2rem;
+  }
+  .container.after-arrow p{
+    font-weight:100;
+  }
+}
 .container.after-arrow:after{
   content:'';
   width:3rem;
@@ -46,8 +54,20 @@
   position:relative;
   padding: 2.5rem 1rem;
 }
+@media only screen and (min-width:750px){
+
+  .after-arrow-section p{
+    letter-spacing:1rem!important;
+    font-size:1.4rem!important;
+    font-weight:300;
+  }
+}
 .black-bar p{
   font-size:1.4rem;
+}
+.after-arrow-section p{
+  letter-spacing:3px; 
+  font-size:.6rem;
 }
 @media only screen and (min-width:750px){
   .black-container{

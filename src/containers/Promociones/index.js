@@ -17,7 +17,7 @@ const Promociones = ( props ) => {
       setPosts(response);
     }, [] )
     return(
-        <div className='app'>
+        <div className='Promociones'>
             <div className='p-backgrnd'>
                 <div className='container flex-center-center d-flex b-color'>
                     <h2>Promociones</h2>

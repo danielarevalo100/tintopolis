@@ -44,26 +44,20 @@ const Home = ( props ) => {
       <div className='black-bar' >
         <div className='bg-black' style={{width:'100%', padding:'2rem'}}>
           <div className='container after-arrow'>
-            <div className='d-flex'>
+            <div>
                 <p className='txt-white txt-center' style={{lineHeight:'1.8rem'}}>Realizamos envíos a todo Chile. En RM despacho GRATIS por compras superiores a $40.000</p>
-                <h2 className='txt-yellow txt-center' style={{fontSize:'1.3rem', paddingTop:'2px'}}>TODOS NUESTROS PRECIOS INCLUYEN IVA</h2>
-                <div style={{marginTop:'1rem'}}>
-                  <ShopButton/>
-                </div>
+              <h2 className='txt-yellow txt-center' style={{paddingTop:'.8rem'}}>TODOS NUESTROS PRECIOS INCLUYEN IVA</h2>
             </div>
           </div>
         </div>
-
         <div className='bg-gray after-arrow-section'>
           <div className='container'>
-            <p className='txt-center' style={{letterSpacing:'1rem'}}>
+            <p className='txt-center'>
               TENEMOS UN CHAT ONLINE A TU DISCPOSICION
             </p>
           </div>
         </div>
       </div>
-
-
       <InfoBox title='PROMOCIONES' desc='Aprovecha nuestras promociones y obten mucho mas por menos te esperamos!'/>
       <div className='prom-section container d-flex'>
         {posts.map(( post ) => <InfoProm key={post.id} img={post.featured_image_src} title={post.title?.rendered || 'Tintopolis'} desc={post.excerpt?.rendered || 'Tintopolis Tu mejor opcion'}/>)}

@@ -1,5 +1,9 @@
 header{
   width:100%;
+  position:relative;
+}
+header a{
+  color:#FFFFFF;
 }
 header .component{
   align-items:center;
@@ -110,4 +114,43 @@ nav ul li.active:before{
   top: 0;
   left: 0;
   height: 8px;
+}
+
+nav ul li:before{
+  content: '';
+  width: 100%;
+  position: absolute;
+  background-color: #00AEEF;
+  top: 0;
+  left: 0;
+  height: 0px;
+  transition:.12s;
+}
+nav ul li:hover:before{
+  height: 8px;
+}
+header .mobile-menu{
+  position:absolute;
+  width:100%;
+  top:100%;
+  max-height:0%;
+  overflow:hidden;
+  transition: max-height .3s;
+
+}
+header .mobile-menu.opened{
+  max-height:100vh;
+}
+header .mobile-menu ul li{
+  display:block;
+  width:100%;
+  padding:1rem;
+  text-align:center;
+  font-size:2rem;
+}
+header .mobile-menu ul li.active{
+  background-color:yellow;
+}
+header .mobile-menu ul li.active a{
+  color:#000000!important;
 }

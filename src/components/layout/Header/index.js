@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { 
   Link
 } from 'react-router-dom'
@@ -14,6 +14,9 @@ import ShopButton from '../../ShopButton';
 
 const Header = () => {
 
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const handleMenuClick =  () => setOpenMenu(!openMenu)
   return(
     <header>
       <div className='bg-blue' >
@@ -39,7 +42,7 @@ const Header = () => {
           <div style={{maxWidth:'1140px'}} className='container d-flex'>
             <img className='main-header-logo' src='https://tintopolis.cl/wp-content/uploads/2020/12/Tintopolis_logo_blanco-1024x487.png' />
             <ShopButton/>
-            <div className='burger-menu-icon'>
+            <div onClick={handleMenuClick} className='burger-menu-icon'>
               <MenuIcon/>
             </div>
             <nav>
@@ -56,6 +59,17 @@ const Header = () => {
         </div>
 
       </div>
+      {window.innerHeight <= 923 && (
+        <div className={`bg-pink mobile-menu ${openMenu ? 'opened' : ''}`}>
+          <ul>
+            <li onClick={() => setOpenMenu(false)} className='active'><Link to={{pathname:'/'}} >Inicio</Link></li>
+            <li onClick={() => setOpenMenu(false)}><Link to={{pathname:'/nosotros'}} >Nosotros</Link></li>
+            <li onClick={() => setOpenMenu(false)}><Link to={{pathname:'/promociones'}} >Promociones</Link></li>
+            <li onClick={() => setOpenMenu(false)}><Link to={{pathname:'/servicios'}} >Servicios</Link></li>
+            <li onClick={() => setOpenMenu(false)}><Link>Contacto</Link></li>
+          </ul>
+        </div>
+      )}
     </header>
   )
 
