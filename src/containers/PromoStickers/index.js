@@ -1,27 +1,52 @@
 import React, {useState, useEffect} from 'react';
 
-/*Styles*/
+/* styles */
 import './styles.css'
 
-/*Components*/
+/* managers */
+import { API_posts } from '../../managers/Api'
+
+/* components */
 import InfoProm from '../../components/InfoProm';
 import PromoProd from '../../components/PromoProd';
 
-const PromoStickers = ( props ) => {
+ /* icons */
+import CircularProgress from '@material-ui/core/CircularProgress';
 
+const PromoStickers = ( props ) => {
+  const [data, setData] = useState({})
+  const [loaded, setLoaded] = useState(false)
+
+  useEffect( async () => {
+    console.log(props.match)
+    const response = await API_posts.fetch( [props.match.params.id] );
+    setData(response[0])
+    setLoaded(true)
+    console.log(data)
+  }, [] )
+
+  if(!loaded){
+    return(
+      <div className='loader d-flex flex-center-center' style={{flexDirection:'column'}}>
+        <img style={{maxWidth:'300px', marginBottom:'90px'}} src='https://tintopolis.cl/wp-content/uploads/2020/12/logo.png'/>
+        <CircularProgress/>
+      </div>
+    )
+  }else{
     return(
       <div className='app'>
         <div className='ps-bg'>
           <div className='stickers'>
-            <InfoProm img='https://tintopolis.cl/wp-content/uploads/2020/12/PROMOS_S-2.png'/>
-            <PromoProd title='Promo Stickers'/>
+            <InfoProm img={data.featured_image_src}/>
+            <PromoProd title={data.title.rendered}/>
             <div className='prom-separator'>
-              <InfoProm desc='1000 Stickers 5x5cm en adhesivo PVC blanco impresos con una excelente calidad, resistentes a altas y bajas temperaturas. Condiciones de la promoción: Solo stickers circulares o rectangulares.'/>
+              <InfoProm desc={data.excerpt.rendered}/>
             </div>
           </div>
         </div>
       </div>
     )
+  }
 }
 
 export default PromoStickers

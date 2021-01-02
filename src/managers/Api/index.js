@@ -14,9 +14,13 @@ export const API_posts ={
         return acc + aux + 'include[]=' + id;
       },'')
     }
-    
-    const response = await axios(BASE_URL + 'posts' + parsedParams);
-    return response.data;
+    try{
+      const response = await axios(BASE_URL + 'posts' + parsedParams);
+      return response.data;
+    }catch( err ){
+      console.log(err)
+      return []
+    }
   }
 
 }

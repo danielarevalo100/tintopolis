@@ -55,7 +55,17 @@
 .srv-list i{
     font-size: 1.7rem;
 }
-.srv-list span{
+.srv-list h3{
     font-size: 1.8rem;
     font-weight: 300;
+    margin-right:5rem;
+    margin-left:.2rem
+}
+.line{
+  height:1px;
+  background-color:#000000;
+  flex:1;
+}
+.section-title svg{
+  color:#06AEEF;
 }

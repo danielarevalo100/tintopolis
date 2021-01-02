@@ -16,6 +16,7 @@ const Promociones = ( props ) => {
       const response = await API_posts.fetch( [297, 301, 348] );
       setPosts(response);
     }, [] )
+
     return(
         <div className='Promociones'>
             <div className='p-backgrnd'>
