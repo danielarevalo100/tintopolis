@@ -9,8 +9,8 @@ const InfoProm = ( props ) => {
       <div className='container'>
         <img src={props.img}/>
       </div>
-      <div className='container' style={{color:'#54595F', fontWeight:'600', marginBottom:'2px'}}>
-        <h4><Link>{props.title}</Link></h4>
+      <div className='container' style={{fontWeight:'600', marginBottom:'2px'}}>
+        <h4><Link to={props.path} style={{color:'#54595F'}}>{props.title}</Link></h4>
       </div>
       <div className='container' style={{color:'#777', lineHeight:'2.2rem'}}>
         <p dangerouslySetInnerHTML={{ __html: props.desc }}></p>

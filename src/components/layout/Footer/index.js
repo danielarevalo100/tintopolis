@@ -64,7 +64,7 @@ const Footer = () => {
           </div>
         </div>
         <div className='footer-bottom-row bg-black'>
-          <p className='txt-center' style={{color:'#333333'}}>Powered by Daniel Arevalo | Designed by Pulpo Creativo</p>
+          <p className='txt-center' style={{color:'#333333'}}>Powered by AS | Designed by Pulpo Creativo</p>
         </div>
       </div>
     </footer>
