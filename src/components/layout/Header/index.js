@@ -59,7 +59,7 @@ const Header = () => {
         </div>
 
       </div>
-      {window.innerHeight <= 923 && (
+      {window.innerWidth <= 923 && (
         <div className={`bg-pink mobile-menu ${openMenu ? 'opened' : ''}`}>
           <ul>
             <li onClick={() => setOpenMenu(false)} className='active'><Link to={{pathname:'/'}} >Inicio</Link></li>
