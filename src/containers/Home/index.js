@@ -58,7 +58,7 @@ const Home = ( props ) => {
 
         <div className='bg-gray after-arrow-section'>
           <div className='container'>
-            <p className='txt-center' style={{letterSpacing:'1rem'}}>
+            <p className='txt-center'>
               TENEMOS UN CHAT ONLINE A TU DISCPOSICION
             </p>
           </div>
